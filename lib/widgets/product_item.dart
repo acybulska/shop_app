@@ -35,7 +35,7 @@ class ProductItem extends StatelessWidget {
             ),
             backgroundColor: Colors.black87,
             leading: Consumer<Product>(
-              builder: (ctx, product, child) => IconButton(
+              builder: (ctx, product, _) => IconButton(
                 icon: product.isFavourite
                     ? Icon(Icons.favorite)
                     : Icon(Icons.favorite_border),
